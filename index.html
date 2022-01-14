@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+          <h1 id="title">Title</h1>
+          <p id="description">Description</p>
+          
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <Label id="name-label">Name</label><br>
+            <input id="name" 
+                   type="text"
+                   class="form-control"
+                   placeholder="Enter your name"
+                   required />
+          </div>
+          
+            <div class="form-group">
+            <Label id="email-label">Email</label><br>
+            <input id="email" 
+                   type="email"
+                   class="form-control"
+                   placeholder="Enter your email"
+                   required />
+          </div>
+          
+            <div class="form-group">
+            <Label id="number-label">Age</label><br>
+            <input id="number" 
+                   class="form-control"
+                   type="number"
+                   min="10"
+                   max="65"
+                   placeholder="Enter your age"
+                   required />
+          </div>
+      
+          <div class="form-group">
+              <p>Enter your current role</p>
+              <select id="dropdown" name="selection" class="form-control">
+              <option disabled selected value>Select your current role</option>
+              <option value="Student">Student</option>
+              <option value="Under-gratuate">Under-gratuate</option>
+              <option value="Gratuate">Gratuate</option>
+              <option value="Job">On Job</option>
+              </select>
+          </div>
+      
+          <div class="form-group">
+              <p>Would you recomend this site to your friend</p>
+              <label >
+                  <input type="radio"
+                          name="user"
+                         
+                          value="definitely"
+                          checked
+                  />
+              Definitely</label> <br>
+              <label>
+                  <input type="radio"
+                  name="user"
+                  value="maybe"
+                  >
+              May Be</label> <br>
+              <label>
+                  <input type="radio"
+                  name="user"
+                  value="notsure"
+                  >
+              Not Sure</label> <br>
+          </div>
+      
+          <div class="form-group">
+              <p>What do you want to improve?</p>
+              <label>
+                  <input type="checkbox"
+                  name="user"
+                  value="skills">
+              Skills</label><br>
+              <label>
+                  <input type="checkbox"
+                  name="user"
+                  value="certificate">
+              Certificate</label><br>
+              <label>
+                  <input type="checkbox"
+                  name="user"
+                  value="job">
+              Job</label><br>
+              <label>
+                  <input type="checkbox"
+                  name="user"
+                  value="training">
+              Training</label><br>
+          </div>
+          <div class="form-group">
+              <p>Any comment or Suggestion</p>
+              <textarea name="comment" id="comment" class="input-textarea" placeholder="Enter your comment here"></textarea>
+          </div><br><br><br>
+          <div class="form-group">
+              <button type="submit" name="submit" id="submit" class="submit-button">Submit</button>
+          </div>
+          
+       
+          
+          </form>
+        </div>
+      
+</body>
+</html>
